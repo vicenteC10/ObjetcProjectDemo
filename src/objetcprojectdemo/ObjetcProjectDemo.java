@@ -7,7 +7,7 @@ package objetcprojectdemo;
 
 /**
  *
- * @author MANUEL
+ * @author Vicente
  */
 public class ObjetcProjectDemo {
 

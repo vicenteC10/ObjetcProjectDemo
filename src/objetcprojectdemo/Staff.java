@@ -8,19 +8,26 @@ package objetcprojectdemo;
 
 /**
  *
- * @author MANUEL
+ * @author Vicente
  */
 public class Staff {
-/* Declaración de variables privadas de la clase*/
+    /**
+     * Declaracion de las variables privadas de la clase
+     */
     private String NameOfStaff;
     private final int hourlyRate = 30;
     private int hoursWorked;
- /* Metodo que visualiza el mensaje "Calculando el salario..."*/   
+    /**
+     * Metodo para visualizar el mensaje Calculando salario.
+     */  
     public void printMessage()
     { 
         System.out.println("Calculando el salario...");
     }
-/* Método que calcula el salario cuando no hay bonus */
+    /**
+     * Metodo que calcula el salario cuando no hay bonus.
+     * @return salario sin bonus.
+     */
     public int calculatePay()
     {
         printMessage();
@@ -31,7 +38,12 @@ public class Staff {
         else
             return -1;
     }
-    /* Método que calcula es salario cuando hay bonus*/
+    /**
+     * Metodo que calcula el salario cuando hay bonus.
+     * @param bonus
+     * @param allowance
+     * @return 
+     */
     public int calculatePay(int bonus, int allowance)
     {
         printMessage();
@@ -40,7 +52,10 @@ public class Staff {
         else
             return 0;
     }
-   /* Mértodo setter que verifica que horas trabajadas es mayor que cero */
+    /**
+     * Mértodo setter que verifica que horas trabajadas es mayor que cero.
+     * @param hours 
+     */
     public void setHoursWorked(int hours)
     {
         if (hours > 0)
@@ -50,12 +65,18 @@ public class Staff {
             System.out.println("-Error: HoursWorked is not updated");
             }          
     }
-    /* Método getter para asignar valores a horas trabajadas */
+    /**
+     * Método getter para asignar valores a horas trabajadas
+     * @return 
+     */
     public int getHoursWorked()
     {
         return hoursWorked;
     }
-    /* Constructores crean  objetos Staff */
+    /**
+     * Constructores que crean objetods.
+     * @param name 
+     */
     public Staff(String name)
     {
         String nameOfStaff = name;
